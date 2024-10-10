@@ -27,7 +27,7 @@ CREATE TABLE `canal` (
   `nome` varchar(50) DEFAULT NULL,
   `sigla` varchar(25) DEFAULT NULL,
   PRIMARY KEY (`num_canal`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `canal` (
 
 LOCK TABLES `canal` WRITE;
 /*!40000 ALTER TABLE `canal` DISABLE KEYS */;
-INSERT INTO `canal` VALUES (1,'Cartoon Network','CN'),(2,'Disney XD','XD'),(3,'HBO','HBO');
+INSERT INTO `canal` VALUES (1,'Cartoon Network','CNA'),(2,'Disney XD','XD'),(3,'HBO','HBO');
 /*!40000 ALTER TABLE `canal` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -82,7 +82,7 @@ CREATE TABLE `filme` (
   `duracao` int NOT NULL,
   PRIMARY KEY (`num_filme`),
   UNIQUE KEY `num_filme_UNIQUE` (`num_filme`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +91,7 @@ CREATE TABLE `filme` (
 
 LOCK TABLES `filme` WRITE;
 /*!40000 ALTER TABLE `filme` DISABLE KEYS */;
-INSERT INTO `filme` VALUES (1,'Batman Mask of the Phantasm','Batman A Máscara do Fantasma',1993,'EUA','Ação',76),(2,'The Lion King','O Rei Leão',1994,'EUA','Aventura',88),(3,'Kimitachi wa Dō Ikiru ka','O Menino e a Garça',2024,'Japão','Fantasia',124);
+INSERT INTO `filme` VALUES (1,'Batman Mask of the Phantasm','Batman A Máscara do Fantasma',1994,'EUA','Ação',76),(2,'The Lion King','O Rei Leão',1994,'EUA','Aventura',88),(3,'Kimitachi wa Dō Ikiru ka','O Menino e a Garça',2024,'Japão','Fantasia',124);
 /*!40000 ALTER TABLE `filme` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -104,4 +104,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-10  8:40:29
+-- Dump completed on 2024-10-10 10:16:58
