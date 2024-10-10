@@ -20,7 +20,6 @@ def create_connection():
 def filme_crud(connection):
     st.subheader("Gerenciar Filmes")
 
-    # Adicionar Filme
     with st.expander("Adicionar Filme"):
         titulo_original = st.text_input("Título Original:")
         titulo_brasil = st.text_input("Título no Brasil:")
